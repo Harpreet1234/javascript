@@ -1,0 +1,35 @@
+
+var n = prompt ("enter the number of rows");
+function pascaltraingle (n)
+{
+
+ var arr=[];
+var tmp;
+
+for ( var I =0;i <n;i++)
+{
+arr [i]=[];
+for (var j= 0; j <i;j++){
+if (i==j)
+   {
+arr[i].Push (1);
+
+   }
+
+else{
+tmp = (!!arr [i-1][j-1]?arr [i-1][j-1]:0) +( !!arr [i-1][j]?arr [i-1][J]:0);
+arr[I].push (tmp);
+
+}
+return arr;
+
+}
+
+
+}
+
+
+
+}
+
+
